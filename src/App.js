@@ -1,9 +1,10 @@
 import DateCounter from "./DateCounter";
+import DateCounterTest from "./DateCounterTest";
 
 const App = () => {
   return (
     <div>
-      <DateCounter />
+      <DateCounterTest />
     </div>
   );
 };
