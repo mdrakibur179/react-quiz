@@ -253,6 +253,11 @@ progress {
   margin: 6rem;
 }
 
+.range-slider {
+  display: flex;
+  text-align: center;
+}
+
 .counter * {
   font-size: inherit;
   padding: 0.8rem;
