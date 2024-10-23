@@ -37,15 +37,19 @@ body {
 }
 
 .main {
-  width: 50rem;
+  width: 100%;
+  max-width: 80rem;
+  padding: 0 1.6rem;
 }
 
 .app-header {
-  width: 66rem;
+  width: 100%;
+  /* max-width: 70rem; */
   margin-bottom: 4rem;
   display: flex;
   align-items: center;
-  justify-content: space-between;
+  justify-content: center;
+  padding: 0 1.6rem;
 }
 
 .error {
@@ -53,7 +57,7 @@ body {
   font-size: 1.6rem;
   font-weight: 500;
   padding: 2rem;
-  background-color: #495057;
+  background-color: var(--color-dark);
   border-radius: 100px;
 }
 
@@ -64,6 +68,7 @@ img {
 h1 {
   font-family: "Codystar";
   font-size: 5.6rem;
+  text-align: center;
 }
 
 h2 {
@@ -157,19 +162,56 @@ progress {
 }
 
 .btn-option.correct {
-  background-color: var(--color-theme);
+  /* background-color: var(--color-theme); */
   border: 2px solid var(--color-theme);
   color: var(--color-light);
 }
 .btn-option.wrong {
-  background-color: var(--color-accent);
-  border: 2px solid var(--color-accent);
-  color: var(--color-darkest);
+  /* background-color: var(--color-accent); */
+  border: 2px solid var(--color-theme);
+  color: var(--color-light);
 }
 
-.answer {
-  transform: translateX(2rem);
+.btn-option.correct {
+  background-color: blue;
 }
+
+/* .btn-option.wrong.answer {
+  border: none;
+  background-color: red;
+} */
+
+@keyframes vibrate {
+  0% {
+    transform: translate(0);
+  }
+  20% {
+    transform: translate(-2px, 2px);
+  }
+  40% {
+    transform: translate(-2px, -2px);
+  }
+  60% {
+    transform: translate(2px, 2px);
+  }
+  80% {
+    transform: translate(2px, -2px);
+  }
+  100% {
+    transform: translate(0);
+  }
+}
+
+.btn-option.wrong.answer {
+  border: none;
+  background-color: red;
+  animation: vibrate 0.2s linear;
+  animation-iteration-count: 4; /* Runs for 1 second (0.2s * 5) */
+}
+
+/* .answer {
+  transform: translateX(2rem);
+} */
 
 .result {
   background-color: var(--color-theme);
@@ -199,7 +241,6 @@ progress {
   align-items: center;
   margin-top: 4rem;
   gap: 1.6rem;
-
   color: var(--color-medium);
   font-size: 1.4rem;
 }
@@ -213,7 +254,7 @@ progress {
   border-radius: 100px;
 }
 
-/* CREDIT: https://dev.to/afif/i-made-100-css-loaders-for-your-next-project-4eje */
+/* Loader Animation */
 .loader {
   width: 50px;
   height: 24px;
@@ -241,24 +282,59 @@ progress {
   }
 }
 
-/* ********** */
-/* First counter example */
-.counter {
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 1rem;
-  font-size: 2rem;
-  font-weight: bold;
-  margin: 6rem;
+/* Responsive Styling */
+@media (max-width: 768px) {
+  html {
+    font-size: 56.25%; /* 1rem = 9px */
+  }
+  .app-header,
+  .main {
+    width: 100%;
+    padding: 0;
+    flex-direction: column;
+  }
+  .h1 {
+    font-size: 4rem;
+  }
+  h2 {
+    font-size: 3rem;
+  }
+  h3 {
+    font-size: 2.2rem;
+  }
+  .btn {
+    font-size: 1.8rem;
+    padding: 1rem 2rem;
+  }
+  .progress {
+    font-size: 1.6rem;
+  }
 }
 
-.range-slider {
-  display: flex;
-  text-align: center;
-}
-
-.counter * {
-  font-size: inherit;
-  padding: 0.8rem;
+@media (max-width: 480px) {
+  html {
+    font-size: 50%; /* 1rem = 8px */
+  }
+  .h1 {
+    font-size: 3.6rem;
+  }
+  h2 {
+    font-size: 2.8rem;
+  }
+  .btn {
+    font-size: 1.6rem;
+    padding: 0.8rem 1.6rem;
+  }
+  .progress {
+    font-size: 1.4rem;
+  }
+  .error,
+  .result {
+    font-size: 1.6rem;
+    padding: 1.5rem;
+  }
+  .timer {
+    font-size: 1.6rem;
+    padding: 1.2rem 2.4rem;
+  }
 }

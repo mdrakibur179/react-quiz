@@ -1,0 +1,169 @@
+{
+  "questions": [
+    {
+      "question": "Which of the following is a noun?",
+      "options": ["Quickly", "Run", "Beautiful", "Table"],
+      "correctOption": 3,
+      "points": 10
+    },
+    {
+      "question": "Identify the verb in the sentence: 'She runs every morning.'",
+      "options": ["She", "Runs", "Every", "Morning"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Which word is an adjective?",
+      "options": ["Happiness", "Quickly", "Blue", "Softly"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "What is the past tense of 'go'?",
+      "options": ["Went", "Goes", "Gone", "Going"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Choose the correct pronoun: 'The cat hurt ____ paw.'",
+      "options": ["His", "Their", "Its", "It's"],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Which sentence is in the passive voice?",
+      "options": [
+        "The dog chased the cat.",
+        "The cat was chased by the dog.",
+        "The dog is chasing the cat.",
+        "The cat is chasing the dog."
+      ],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "What type of conjunction is 'but'?",
+      "options": [
+        "Coordinating",
+        "Subordinating",
+        "Correlative",
+        "Interjection"
+      ],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "Which of the following is a compound sentence?",
+      "options": [
+        "She likes tea.",
+        "She likes tea and coffee.",
+        "She likes tea, but she doesn’t like coffee.",
+        "She likes tea when it's cold."
+      ],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "Choose the correct form: 'If I ____ rich, I would travel the world.'",
+      "options": ["Am", "Was", "Were", "Be"],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "What is the function of a preposition in a sentence?",
+      "options": [
+        "To connect two clauses",
+        "To express emotion",
+        "To show the relationship between a noun or pronoun and other words",
+        "To describe a noun"
+      ],
+      "correctOption": 2,
+      "points": 10
+    },
+    {
+      "question": "Identify the gerund in the sentence: 'Swimming is my favorite activity.'",
+      "options": ["Swimming", "Is", "Favorite", "Activity"],
+      "correctOption": 0,
+      "points": 20
+    },
+    {
+      "question": "Which word is a modal verb?",
+      "options": ["Could", "Was", "Is", "Had"],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Select the correct usage: 'He did not ____ to the meeting.'",
+      "options": ["Came", "Come", "Comes", "Coming"],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "What is an infinitive?",
+      "options": [
+        "The base form of a verb with 'to'",
+        "The -ing form of a verb",
+        "The past participle form of a verb",
+        "The third person singular form of a verb"
+      ],
+      "correctOption": 0,
+      "points": 10
+    },
+    {
+      "question": "Which sentence contains a relative clause?",
+      "options": [
+        "She bought a new car.",
+        "The car that she bought is expensive.",
+        "She is happy with her new car.",
+        "The car is very fast."
+      ],
+      "correctOption": 1,
+      "points": 20
+    },
+    {
+      "question": "Choose the sentence with the correct word order.",
+      "options": [
+        "He every day goes to school.",
+        "Goes to school he every day.",
+        "Every day he goes to school.",
+        "To school goes he every day."
+      ],
+      "correctOption": 2,
+      "points": 20
+    },
+    {
+      "question": "What is the correct plural form of 'mouse'?",
+      "options": ["Mouses", "Mice", "Mouse", "Mices"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "Select the correct sentence: 'He ____ his work before the deadline.'",
+      "options": [
+        "Will finished",
+        "Has finish",
+        "Will have finished",
+        "Will finishes"
+      ],
+      "correctOption": 2,
+      "points": 30
+    },
+    {
+      "question": "Which word is an example of an interjection?",
+      "options": ["However", "Well", "And", "Quickly"],
+      "correctOption": 1,
+      "points": 10
+    },
+    {
+      "question": "What is a dangling modifier?",
+      "options": [
+        "A phrase that describes a word not clearly stated in the sentence",
+        "A verb that doesn’t agree with the subject",
+        "A sentence that lacks a conjunction",
+        "An adjective placed after the noun it modifies"
+      ],
+      "correctOption": 0,
+      "points": 30
+    }
+  ]
+}
