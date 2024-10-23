@@ -21,7 +21,7 @@ const initialState = {
   index: 0,
   answer: null,
   points: 0,
-  highscore: 0,
+  highscore: Number(localStorage.getItem("highscore")) || 0,
   secondsRemaining: null,
 };
 
@@ -50,11 +50,13 @@ function reducer(state, action) {
     case "nextQuestion":
       return { ...state, index: state.index + 1, answer: null };
     case "finish":
+      const newHighscore =
+        state.points >= state.highscore ? state.points : state.highscore;
+      localStorage.setItem("highscore", newHighscore);
       return {
         ...state,
         status: "finished",
-        highscore:
-          state.points >= state.highscore ? state.points : state.highscore,
+        highscore: newHighscore,
       };
     case "restart":
       return {
@@ -83,11 +85,17 @@ const App = () => {
   const numQuestions = questions.length;
   const maxPossiblePoints = questions.reduce((acc, cur) => acc + cur.points, 0);
 
-  useEffect(function () {
-    fetch("http://localhost:8000/questions")
-      .then((res) => res.json())
-      .then((data) => dispatch({ type: "dataReceived", payload: data }))
-      .catch((err) => dispatch({ type: "dataFailed" }));
+  useEffect(() => {
+    async function fetchData() {
+      try {
+        const response = await fetch("http://192.168.0.100:8000/questions");
+        const data = await response.json();
+        dispatch({ type: "dataReceived", payload: data });
+      } catch (error) {
+        dispatch({ type: "dataFailed" });
+      }
+    }
+    fetchData();
   }, []);
 
   return (
